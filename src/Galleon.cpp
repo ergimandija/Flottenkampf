@@ -2,6 +2,7 @@
 
 Galleon::Galleon()
 {
+    std::cout << "created galleon" << std::endl;
     _hull = 250;
     _size = 8;
     _damage = 50;

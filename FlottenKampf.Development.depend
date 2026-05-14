@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1778771492 source:c:\users\user\documents\oop\flottenkampf.development\main.cpp
+1778794585 source:c:\users\user\documents\oop\flottenkampf.development\main.cpp
 	<iostream>
 	"Game.h"
+	<time.h>
 
 1776380967 c:\users\user\documents\sfml-3.1.0\include\sfml\graphics.hpp
 	<SFML/Graphics/BlendMode.hpp>
@@ -561,14 +562,15 @@
 1778779012 c:\users\user\documents\oop\flottenkampf.development\include\iship.h
 	<memory>
 
-1778773557 source:c:\users\user\documents\oop\flottenkampf.development\src\team.cpp
+1778794860 source:c:\users\user\documents\oop\flottenkampf.development\src\team.cpp
 	"Team.h"
 
-1778773253 c:\users\user\documents\oop\flottenkampf.development\include\team.h
+1778792232 c:\users\user\documents\oop\flottenkampf.development\include\team.h
 	<vector>
 	<memory>
 	"IShip.h"
 	<iostream>
+	"ShipFactory.h"
 
 1778771358 source:c:\users\user\documents\oop\flottenkampf.development\src\world.cpp
 	"World.h"
@@ -579,11 +581,8 @@
 1778779320 source:c:\users\user\documents\oop\flottenkampf.development\src\ship.cpp
 	"Ship.h"
 
-1778788039 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
+1778792749 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
 	"IShip.h"
-	"Brig.h"
-	"Galleon.h"
-	"Schooner.h"
 	<iostream>
 
 1778778927 source:c:\users\user\documents\oop\flottenkampf.development\src\battlecontext.cpp
@@ -593,21 +592,32 @@
 	"Team.h"
 	<memory>
 
-1778778356 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
+1778791500 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
 	"Brig.h"
 
-1778777487 c:\users\user\documents\oop\flottenkampf.development\include\brig.h
+1778791369 c:\users\user\documents\oop\flottenkampf.development\include\brig.h
 	"Ship.h"
 
-1778778362 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
+1778791484 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
 	"Galleon.h"
 
-1778777500 c:\users\user\documents\oop\flottenkampf.development\include\galleon.h
+1778791108 c:\users\user\documents\oop\flottenkampf.development\include\galleon.h
 	"Ship.h"
 
-1778778390 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
+1778792557 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
 	"Schooner.h"
 
 1778777509 c:\users\user\documents\oop\flottenkampf.development\include\schooner.h
 	"Ship.h"
+
+1778792339 c:\users\user\documents\oop\flottenkampf.development\include\shipfactory.h
+	"Ship.h"
+	"Galleon.h"
+	"Schooner.h"
+	"Brig.h"
+	<string>
+	<memory>
+
+1778792355 source:c:\users\user\documents\oop\flottenkampf.development\src\shipfactory.cpp
+	"ShipFactory.h"
 

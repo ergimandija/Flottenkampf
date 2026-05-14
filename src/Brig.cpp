@@ -2,6 +2,7 @@
 
 Brig::Brig()
 {
+    std::cout << "created Brig" << std::endl;
     _hull = 150;
     _size = 6;
     _damage = 60;

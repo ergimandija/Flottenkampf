@@ -2,7 +2,10 @@
 
 Schooner::Schooner()
 {
-    //ctor
+    std::cout << "created schooner" << std::endl;
+    _hull = 250;
+    _size = 8;
+    _damage = 50;
 }
 
 Schooner::~Schooner()

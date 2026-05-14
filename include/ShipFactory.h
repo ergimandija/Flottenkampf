@@ -1,6 +1,9 @@
 #ifndef SHIPFACTORY_H
 #define SHIPFACTORY_H
 #include "Ship.h"
+#include "Galleon.h"
+#include "Schooner.h"
+#include "Brig.h"
 #include <string>
 #include <memory>
 
@@ -21,7 +24,7 @@ class ShipFactory
     public:
         ShipFactory();
         virtual ~ShipFactory();
-        static std::unique_ptr<Ship> createShip(ShipType stype,Behaviour btype);
+        static std::unique_ptr<Ship> createShip(ShipType stype);
     protected:
 
     private:

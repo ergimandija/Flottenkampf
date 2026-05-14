@@ -2,69 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\BattleContext.h" open="1" top="0" tabpos="60" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="86" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Game.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="332" topLine="1" />
-		</Cursor>
-	</File>
-	<File name="src\BattleContext.cpp" open="1" top="0" tabpos="61" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\BattleContext.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="147" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\World.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="163" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Game.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="201" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Ship.h" open="1" top="0" tabpos="52" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="114" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src\Schooner.cpp" open="1" top="0" tabpos="59" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="291" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Team.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="346" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Brig.h" open="1" top="0" tabpos="56" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="78" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\IShip.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="20" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\IShip.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="50" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ShipFactory.cpp" open="1" top="0" tabpos="63" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="121" topLine="1" />
-		</Cursor>
-	</File>
-	<File name="src\Brig.cpp" open="1" top="0" tabpos="57" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="33" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\World.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -72,39 +12,99 @@
 			<Cursor1 position="297" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Ship.cpp" open="1" top="0" tabpos="53" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Galleon.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="164" topLine="0" />
+			<Cursor1 position="87" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Galleon.cpp" open="1" top="0" tabpos="55" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ShipFactory.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="42" topLine="0" />
+			<Cursor1 position="121" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Team.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\IShip.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="455" topLine="3" />
+			<Cursor1 position="20" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Galleon.h" open="1" top="1" tabpos="54" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Schooner.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="88" topLine="0" />
+			<Cursor1 position="155" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\ShipFactory.h" open="1" top="0" tabpos="62" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="324" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="include\Schooner.h" open="1" top="0" tabpos="58" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Schooner.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="104" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="include\BattleContext.h" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="86" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Game.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="332" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Galleon.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="51" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\ShipFactory.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="126" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="src\World.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="163" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="116" topLine="0" />
+			<Cursor1 position="98" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Ship.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="732" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="include\Game.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="201" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Team.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="165" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Brig.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="83" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Brig.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="51" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\IShip.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="50" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Team.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="522" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="src\Ship.cpp" open="1" top="1" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="656" topLine="17" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

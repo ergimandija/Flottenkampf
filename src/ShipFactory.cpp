@@ -11,7 +11,7 @@ ShipFactory::~ShipFactory()
 }
 
 std::unique_ptr<Ship> ShipFactory::createShip(ShipType stype){
-     std::unique_ptr ship;
+     std::unique_ptr<Ship> ship;
     switch(stype){
     case GALLEON:
         ship = std::make_unique<Galleon>();

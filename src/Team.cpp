@@ -25,7 +25,7 @@ Team::Team(int memberCount){
 void Team::createCharacters(){
     std::cout << "creating character for team " << std::endl;
     for(int i=0; i< _memberCount;i++){
-        _members.push_back();
+        _members.push_back(ShipFactory::createShip(static_cast<ShipType>(rand()%3)));
     }
 
 }

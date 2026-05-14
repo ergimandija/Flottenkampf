@@ -1,9 +1,7 @@
 #ifndef SHIP_H
 #define SHIP_H
 #include "IShip.h"
-#include "Brig.h"
-#include "Galleon.h"
-#include "Schooner.h"
+
 #include <iostream>
 
 
