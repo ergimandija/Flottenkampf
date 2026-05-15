@@ -5,6 +5,8 @@
 #include "Team.h"
 #include <vector>
 #include <memory>
+#include "BattleContext.h"
+
 class Game
 {
     public:
@@ -17,6 +19,9 @@ class Game
     private:
         World _world;
         std::vector<std::unique_ptr<Team>> _teams;
+        bool _isFinished;
+
+
 
 
 };

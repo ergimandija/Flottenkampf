@@ -14,6 +14,6 @@ Schooner::~Schooner()
 }
 
 void Schooner::attack(std::unique_ptr<IShip>& target){
-    std::cout << "Ship" << _id << "trifft kritisch " << target->getId() << std::endl;
+    std::cout << "Ship " << _id << " trifft kritisch Ship " << target->getId() << std::endl;
     target->recieveDamage(_damage);
 }

@@ -18,7 +18,9 @@ class Ship: public IShip
         Ship();
         virtual ~Ship();
         int getId() const override;
+        void setId(int id) override;
         void move() override;
+        bool isAlive();
         void moveUp();
         void moveDown();
         void moveLeft();

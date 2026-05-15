@@ -6,8 +6,10 @@
 class BattleContext
 {
     public:
+        BattleContext();
         BattleContext(std::unique_ptr<Team>& teamA, std::unique_ptr<Team>& teamB);
         virtual ~BattleContext();
+        std::unique_ptr<Team>& getEnemiesOf(std::unique_ptr<Team>& team);
 
     protected:
 

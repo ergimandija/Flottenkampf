@@ -14,7 +14,7 @@ Brig::~Brig()
 }
 
 void Brig::attack(std::unique_ptr<IShip>& target){
-    std::cout << "Ship" << _id << "greift Zielsuchend " << target->getId() << " an" << std::endl;
+    std::cout << "Ship " << _id << " greift Zielsuchend Ship " << target->getId() << " an" << std::endl;
     target->recieveDamage(_damage);
 
 }

@@ -16,7 +16,9 @@ int Ship::getId() const {
     return _id;
 }
 
-
+void Ship::setId(int id){
+    _id = id;
+}
 void Ship::move(){
     std::cout << "moving" << std::endl;
 }
@@ -40,7 +42,11 @@ void Ship::setYPosition(int yPos){
 void Ship::recieveDamage(int amount){
     _hull -= amount;
     if(_hull <= 0){
-        std::cout << "Ship" << _id << "defeated" << std::endl;
+        std::cout << "Ship " << _id << " defeated" << std::endl;
         _isAlive = false;
     }
+}
+
+bool Ship::isAlive(){
+    return _isAlive;
 }

@@ -14,6 +14,6 @@ Galleon::~Galleon()
 }
 
 void Galleon::attack(std::unique_ptr<IShip>& target){
-    std::cout << "Ship" << _id << "bombardiert " << target->getId() << std::endl;
+    std::cout << "Ship " << _id << " bombardiert Ship " << target->getId() << std::endl;
     target->recieveDamage(_damage);
 }
