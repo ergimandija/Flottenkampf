@@ -546,7 +546,7 @@
 
 1778756449 c:\users\user\documents\oop\flottenkampf.development\include\example.h
 
-1778857113 source:c:\users\user\documents\oop\flottenkampf.development\src\game.cpp
+1778952991 source:c:\users\user\documents\oop\flottenkampf.development\src\game.cpp
 	"Game.h"
 
 1778854933 c:\users\user\documents\oop\flottenkampf.development\include\game.h
@@ -560,31 +560,34 @@
 1778755292 source:c:\users\user\documents\oop\flottenkampf.development\src\iship.cpp
 	"IShip.h"
 
-1778854671 c:\users\user\documents\oop\flottenkampf.development\include\iship.h
+1778929674 c:\users\user\documents\oop\flottenkampf.development\include\iship.h
 	<memory>
+	"IController.h"
 
-1778857201 source:c:\users\user\documents\oop\flottenkampf.development\src\team.cpp
+1778925580 source:c:\users\user\documents\oop\flottenkampf.development\src\team.cpp
 	"Team.h"
 
-1778857142 c:\users\user\documents\oop\flottenkampf.development\include\team.h
+1778924964 c:\users\user\documents\oop\flottenkampf.development\include\team.h
 	<vector>
 	<memory>
 	"IShip.h"
 	<iostream>
-	"ShipFactory.h"
+	"EnemyFactory.h"
 
-1778771358 source:c:\users\user\documents\oop\flottenkampf.development\src\world.cpp
+1778953629 source:c:\users\user\documents\oop\flottenkampf.development\src\world.cpp
 	"World.h"
 
-1778770946 c:\users\user\documents\oop\flottenkampf.development\include\world.h
+1778953468 c:\users\user\documents\oop\flottenkampf.development\include\world.h
 	"Team.h"
+	<SFML/Graphics.hpp>
 
-1778854293 source:c:\users\user\documents\oop\flottenkampf.development\src\ship.cpp
+1778941302 source:c:\users\user\documents\oop\flottenkampf.development\src\ship.cpp
 	"Ship.h"
 
-1778854650 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
+1778941185 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
 	"IShip.h"
 	<iostream>
+	"Dice.h"
 
 1778854728 source:c:\users\user\documents\oop\flottenkampf.development\src\battlecontext.cpp
 	"BattleContext.h"
@@ -593,32 +596,67 @@
 	"Team.h"
 	<memory>
 
-1778855778 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
+1778929613 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
 	"Brig.h"
 
 1778791369 c:\users\user\documents\oop\flottenkampf.development\include\brig.h
 	"Ship.h"
 
-1778855772 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
+1778929632 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
 	"Galleon.h"
 
 1778791108 c:\users\user\documents\oop\flottenkampf.development\include\galleon.h
 	"Ship.h"
 
-1778855783 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
+1778929699 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
 	"Schooner.h"
 
 1778777509 c:\users\user\documents\oop\flottenkampf.development\include\schooner.h
 	"Ship.h"
 
-1778792339 c:\users\user\documents\oop\flottenkampf.development\include\shipfactory.h
+1778929867 c:\users\user\documents\oop\flottenkampf.development\include\shipfactory.h
 	"Ship.h"
 	"Galleon.h"
 	"Schooner.h"
 	"Brig.h"
 	<string>
 	<memory>
+	"IController.h"
+	"PlayerController.h"
+	"AIController.h"
 
-1778792355 source:c:\users\user\documents\oop\flottenkampf.development\src\shipfactory.cpp
+1778952014 source:c:\users\user\documents\oop\flottenkampf.development\src\shipfactory.cpp
 	"ShipFactory.h"
+
+1778861028 c:\users\user\documents\oop\flottenkampf.development\include\icontroller.h
+	<iostream>
+
+1778861450 source:c:\users\user\documents\oop\flottenkampf.development\src\aicontroller.cpp
+	"AIController.h"
+
+1778859301 c:\users\user\documents\oop\flottenkampf.development\include\aicontroller.h
+	"IController.h"
+
+1778858711 source:c:\users\user\documents\oop\flottenkampf.development\src\icontroller.cpp
+	"IController.h"
+
+1778861011 source:c:\users\user\documents\oop\flottenkampf.development\src\playercontroller.cpp
+	"PlayerController.h"
+
+1778860848 c:\users\user\documents\oop\flottenkampf.development\include\playercontroller.h
+	"PlayerController.h"
+	"IController.h"
+
+1778862610 c:\users\user\documents\oop\flottenkampf.development\include\enemyfactory.h
+	"AIController.h"
+	"ShipFactory.h"
+
+1778862426 source:c:\users\user\documents\oop\flottenkampf.development\src\enemyfactory.cpp
+	"EnemyFactory.h"
+
+1778927837 source:c:\users\user\documents\oop\flottenkampf.development\src\dice.cpp
+	"Dice.h"
+
+1778927833 c:\users\user\documents\oop\flottenkampf.development\include\dice.h
+	<iostream>
 

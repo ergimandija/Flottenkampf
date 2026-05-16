@@ -4,7 +4,7 @@
 #include <memory>
 #include "IShip.h"
 #include <iostream>
-#include "ShipFactory.h"
+#include "EnemyFactory.h"
 
 class Team
 {
@@ -13,12 +13,13 @@ class Team
         Team(int memberCount);
         virtual ~Team();
         void addMember(IShip& s);
-        void executeTurn(std::unique_ptr<Team>& targetTeam);
+        void executeTurn(int index,std::unique_ptr<Team>& targetTeam);
         int getAliveMemberCount();
-        void createCharacters();
+        void createCharacters(bool isPlayer);
         std::unique_ptr<IShip>& getMember(int index);
         void setId(int id);
         int getId();
+        int getMemberCount() const;
     protected:
 
     private:

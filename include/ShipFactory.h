@@ -6,7 +6,9 @@
 #include "Brig.h"
 #include <string>
 #include <memory>
-
+#include "IController.h"
+#include "PlayerController.h"
+#include "AIController.h"
 enum ShipType {
     BRIG,
     GALLEON,
@@ -24,7 +26,7 @@ class ShipFactory
     public:
         ShipFactory();
         virtual ~ShipFactory();
-        static std::unique_ptr<Ship> createShip(ShipType stype);
+        virtual std::unique_ptr<Ship> createShip(ShipType stype);
     protected:
 
     private:

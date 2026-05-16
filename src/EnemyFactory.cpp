@@ -1,16 +1,16 @@
-#include "ShipFactory.h"
+#include "EnemyFactory.h"
 
-ShipFactory::ShipFactory()
+EnemyFactory::EnemyFactory()
 {
     //ctor
 }
 
-ShipFactory::~ShipFactory()
+EnemyFactory::~EnemyFactory()
 {
     //dtor
 }
 
-std::unique_ptr<Ship> ShipFactory::createShip(ShipType stype){
+std::unique_ptr<Ship> EnemyFactory::createShip(ShipType stype){
      std::unique_ptr<Ship> ship;
     switch(stype){
     case GALLEON:
@@ -24,7 +24,7 @@ std::unique_ptr<Ship> ShipFactory::createShip(ShipType stype){
         ship = std::make_unique<Schooner>();
         break;
     }
-    std::unique_ptr<IController> controller = std::make_unique<PlayerController>();
+    std::unique_ptr<IController> controller = std::make_unique<AIController>();
     ship->setController(controller);
     return ship;
 

@@ -48,22 +48,32 @@
 		<Linker>
 			<Add directory="../../SFML-3.1.0/lib" />
 		</Linker>
+		<Unit filename="include/AIController.h" />
 		<Unit filename="include/BattleContext.h" />
 		<Unit filename="include/Brig.h" />
+		<Unit filename="include/Dice.h" />
+		<Unit filename="include/EnemyFactory.h" />
 		<Unit filename="include/Galleon.h" />
 		<Unit filename="include/Game.h" />
+		<Unit filename="include/IController.h" />
 		<Unit filename="include/IShip.h" />
+		<Unit filename="include/PlayerController.h" />
 		<Unit filename="include/Schooner.h" />
 		<Unit filename="include/Ship.h" />
 		<Unit filename="include/ShipFactory.h" />
 		<Unit filename="include/Team.h" />
 		<Unit filename="include/World.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AIController.cpp" />
 		<Unit filename="src/BattleContext.cpp" />
 		<Unit filename="src/Brig.cpp" />
+		<Unit filename="src/Dice.cpp" />
+		<Unit filename="src/EnemyFactory.cpp" />
 		<Unit filename="src/Galleon.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/IController.cpp" />
 		<Unit filename="src/IShip.cpp" />
+		<Unit filename="src/PlayerController.cpp" />
 		<Unit filename="src/Schooner.cpp" />
 		<Unit filename="src/Ship.cpp" />
 		<Unit filename="src/ShipFactory.cpp" />

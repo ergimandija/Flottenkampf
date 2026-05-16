@@ -14,6 +14,10 @@ Galleon::~Galleon()
 }
 
 void Galleon::attack(std::unique_ptr<IShip>& target){
+    int rolledAmount;
+    do {
+    rolledAmount = Dice::roll(10);
+    std::cout << "rolled a " << rolledAmount << std::endl;
     std::cout << "Ship " << _id << " bombardiert Ship " << target->getId() << std::endl;
-    target->recieveDamage(_damage);
+    } while(target->recieveDamage(_damage,rolledAmount));
 }

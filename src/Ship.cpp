@@ -7,6 +7,15 @@ Ship::Ship()
 
 }
 
+Ship::Ship(int x,int y)
+{
+    _isAlive = true;
+    _state = IDLE;
+    _posX = x;
+    _posY = y;
+
+}
+
 Ship::~Ship()
 {
     //dtor
@@ -21,6 +30,10 @@ void Ship::setId(int id){
 }
 void Ship::move(){
     std::cout << "moving" << std::endl;
+}
+
+void Ship::moveUp(){
+
 }
 
 int Ship::getXPosition() const {
@@ -39,14 +52,39 @@ void Ship::setYPosition(int yPos){
     _posY = yPos;
 }
 
-void Ship::recieveDamage(int amount){
-    _hull -= amount;
-    if(_hull <= 0){
-        std::cout << "Ship " << _id << " defeated" << std::endl;
-        _isAlive = false;
+bool Ship::recieveDamage(int amount, int rolledAmount){
+
+    if(this->isAlive()){
+
+        if(rolledAmount >= _size){
+            _hull -= amount;
+            if(_hull <= 0){
+                std::cout << "Ship " << _id << " defeated" << std::endl;
+                _isAlive = false;
+            }
+            return true;
+        }
+
+        std::cout << "attack failed" << std::endl;
+        return false;
+
     }
+    std::cout << "Ship already defeated" << std::endl;
+    return false;
 }
 
 bool Ship::isAlive(){
     return _isAlive;
+}
+
+ void Ship::setController(std::unique_ptr<IController>& controller){
+            _controller = std::move(controller);
+ }
+
+std::unique_ptr<IController>& Ship::getController()  {
+            return _controller;
+}
+
+std::string Ship::getTexturePath() const {
+        return _texturePath;
 }
