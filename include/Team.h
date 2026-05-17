@@ -5,6 +5,7 @@
 #include "IShip.h"
 #include <iostream>
 #include "EnemyFactory.h"
+#include <windows.h>
 
 class Team
 {
@@ -20,6 +21,7 @@ class Team
         void setId(int id);
         int getId();
         int getMemberCount() const;
+        void setIdle();
     protected:
 
     private:

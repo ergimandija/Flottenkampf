@@ -2,7 +2,9 @@
 #define ENEMYFACTORY_H
 #include "AIController.h"
 #include "ShipFactory.h"
-
+#include "EnemyBrig.h"
+#include "EnemyGalleon.h"
+#include "EnemySchooner.h"
 
 class EnemyFactory: public ShipFactory
 {

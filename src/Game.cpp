@@ -19,7 +19,7 @@ Game::~Game()
 
 void Game::start(){
      sf::RenderWindow window(sf::VideoMode({1000, 1000}), "Flottenkampf");
-
+    window.setPosition({920, 0});
     BattleContext ctx(_teams[0],_teams[1]);
     bool firstTeam = true;
     for(auto& team : _teams){
@@ -31,6 +31,12 @@ void Game::start(){
     _world.render(_teams, window);
 
     do {
+     while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
     for(int i=0;i<_teams[0]->getMemberCount();i++){
         for(auto& team: _teams){
 
@@ -41,6 +47,9 @@ void Game::start(){
                 return;
                 }
             team->executeTurn(i,ctx.getEnemiesOf(team));
+            _world.render(_teams, window);
+            Sleep(2000);
+            team->setIdle();
             _world.render(_teams, window);
             }
     }

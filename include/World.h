@@ -10,7 +10,7 @@ class World
         World();
         virtual ~World();
         void render(std::vector<std::unique_ptr<Team>>& teams, sf::RenderWindow& window);
-        void renderField(sf::RenderWindow& window);
+        void renderField(sf::RenderWindow& window, float tileSize);
         void spawnTeam(std::unique_ptr<Team>& t, bool isEnemy);
 
     protected:

@@ -18,17 +18,18 @@ World::World(int xSize, int ySize)
 
 }
 
-void World::renderField(sf::RenderWindow& window)
+void World::renderField(sf::RenderWindow& window, float tileSize)
 {
-        int tileSize=50;
-        sf::RectangleShape waterTile({(float)tileSize, (float)tileSize});
+
+        sf::RectangleShape waterTile({tileSize, tileSize});
         sf::Texture texture("water.png");
         waterTile.setTexture(&texture);
+        waterTile.setFillColor(sf::Color::Cyan);
           for (int x = 0; x < _xSize; x++)
             {
                 for (int y = 0; y < _ySize; y++)
                 {
-                    waterTile.setPosition({static_cast<float>(x*tileSize),static_cast<float>(y*tileSize)});
+                    waterTile.setPosition({x*tileSize,y*tileSize});
                     window.draw(waterTile);
                 }
             }
@@ -37,7 +38,7 @@ void World::renderField(sf::RenderWindow& window)
 
 void World::spawnTeam(std::unique_ptr<Team>& t, bool isEnemy)
 {
-    int startColumn = _xSize-1;
+    int startColumn = _xSize-2;
     if(!isEnemy)
     {
         startColumn = 0;
@@ -45,8 +46,8 @@ void World::spawnTeam(std::unique_ptr<Team>& t, bool isEnemy)
     for(int i=0; i< t->getMemberCount(); i++)
     {
         auto& member = t->getMember(i);
-        int x =  2*i;
-        int y =  startColumn;
+        int x =  startColumn;
+        int y =  2*i;
         member->setXPosition(x);
         member->setYPosition(y);
     }
@@ -55,37 +56,46 @@ void World::spawnTeam(std::unique_ptr<Team>& t, bool isEnemy)
 
 
 
-
 void World::render(std::vector<std::unique_ptr<Team>>& teams, sf::RenderWindow& window)
 {
 
 
+    float tileSize = 50.f;
+    window.clear();
+    renderField(window,tileSize);
     for(int x=0; x < _xSize; x++)
     {
         for(int y=0; y < _ySize; y++)
         {
-            bool shipHere = false;
             for(auto& t: teams)
             {
 
                 for(int i=0; i< t->getMemberCount(); i++)
                 {
                     auto& member = t->getMember(i);
+
                     if(member->getXPosition()==x && member->getYPosition()==y)
                     {
-                        shipHere = true;
+
+
+                        sf::Texture texture(member->getTexturePath());
+                        sf::RectangleShape ship({tileSize,tileSize});
+                        ship.scale({2.f,2.f});
+                        ship.setTexture(&texture);
+                        ship.setPosition({x*tileSize,y*tileSize});
+                        window.draw(ship);
+
                     }
+
                 }
             }
-            else
-            {
-                std::cout << "X  " ;
-            }
-             renderField(window);
-             window.display();
+
+
+
+
         }
-        std::cout << std::endl;
 
     }
+    window.display();
 
 }

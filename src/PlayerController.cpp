@@ -31,7 +31,7 @@ char PlayerController::pickMovement(){
     char direction;
     std::cout << "pick direction: " << std::endl;
     std::cin >> direction;
-    if(direction == 'w' || direction == 'a' || direction == 's' || direction == 'd'){
+    if(direction == 'w' || direction == 'a' || direction == 's' || direction == 'd' || direction == '.'){
         return direction;
     }
     std::cout << "Input invalid, Try again!" << std::endl;

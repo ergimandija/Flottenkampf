@@ -6,7 +6,7 @@
 #include <vector>
 #include <memory>
 #include "BattleContext.h"
-
+#include "GraphicsManager.h"
 class Game
 {
     public:

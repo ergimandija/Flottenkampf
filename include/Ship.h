@@ -3,12 +3,7 @@
 #include "IShip.h"
 #include "Dice.h"
 
-enum State{
-    IDLE,
-    SHOOTING,
-    SHOT,
-    DESTROYED
-};
+
 
 class Ship: public IShip
 {
@@ -32,7 +27,11 @@ class Ship: public IShip
         void attack(std::unique_ptr<IShip>& target) = 0;
         void setController(std::unique_ptr<IController>& controller);
         std::unique_ptr<IController>& getController() override;
-        virtual std::string getTexturePath() override;
+        std::string getTexturePath() override;
+        std::string resolveFileName();
+        State getState() const override;
+        void setState(State state) override;
+
     protected:
         int _hull;
         int _size;
@@ -43,8 +42,10 @@ class Ship: public IShip
         std::string _texturePath;
 
     private:
-        int _posX;
-        int _posY;
+        int _x;
+        int _y;
+        int _xBorder;
+        int _yBorder;
         std::unique_ptr<IController> _controller;
 
 

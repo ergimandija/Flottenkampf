@@ -3,7 +3,12 @@
 #include <memory>
 #include "IController.h"
 #include <iostream>
-
+enum State{
+    IDLE,
+    SHOOTING,
+    SHOT,
+    DESTROYED
+};
 class IShip
 {
     public:
@@ -19,8 +24,10 @@ class IShip
         virtual void setYPosition(int yPos) = 0;
         virtual bool recieveDamage(int amount, int rolledAmount) = 0;
         virtual bool isAlive()  = 0;
-        virtual std::string getTexturePath() const = 0;
+        virtual std::string getTexturePath() = 0;
         virtual std::unique_ptr<IController>& getController() = 0;
+        virtual State getState() const = 0;
+        virtual void setState(State state) = 0;
 
     protected:
 

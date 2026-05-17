@@ -50,15 +50,22 @@ void Team::executeTurn(int index,std::unique_ptr<Team>& targetTeam){
     auto& member = _members[index];
     if(member->isAlive()){
     std::cout << "Team " << _id <<"'s turn-----------------------" << std::endl;
+        if(targetTeam->getAliveMemberCount() == 0){
+            return;
+        }
+        member->move();
+        member->attack(targetTeam->getMember(member->getController()->pickTarget()));
 
+    }
 
-                    if(targetTeam->getAliveMemberCount() == 0){
-                        return;
-                    }
-                    member->attack(targetTeam->getMember(member->getController()->pickTarget()));
+}
 
-            }
-
+void Team::setIdle(){
+    for(auto& member: _members){
+        if(member->isAlive()){
+        member->setState(IDLE);
+        }
+    }
 }
 
 
