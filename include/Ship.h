@@ -2,7 +2,7 @@
 #define SHIP_H
 #include "IShip.h"
 #include "Dice.h"
-
+#include <cmath>
 
 
 class Ship: public IShip
@@ -25,6 +25,7 @@ class Ship: public IShip
         void setXPosition(int xPos) override;
         void setYPosition(int yPos) override;
         void attack(std::unique_ptr<IShip>& target) = 0;
+        float getDistanceFactor(std::unique_ptr<IShip>& target);
         void setController(std::unique_ptr<IController>& controller);
         std::unique_ptr<IController>& getController() override;
         std::string getTexturePath() override;

@@ -52,7 +52,10 @@
 		<Unit filename="include/BattleContext.h" />
 		<Unit filename="include/Brig.h" />
 		<Unit filename="include/Dice.h" />
+		<Unit filename="include/EnemyBrig.h" />
 		<Unit filename="include/EnemyFactory.h" />
+		<Unit filename="include/EnemyGalleon.h" />
+		<Unit filename="include/EnemySchooner.h" />
 		<Unit filename="include/Galleon.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/IController.h" />
@@ -68,7 +71,10 @@
 		<Unit filename="src/BattleContext.cpp" />
 		<Unit filename="src/Brig.cpp" />
 		<Unit filename="src/Dice.cpp" />
+		<Unit filename="src/EnemyBrig.cpp" />
 		<Unit filename="src/EnemyFactory.cpp" />
+		<Unit filename="src/EnemyGalleon.cpp" />
+		<Unit filename="src/EnemySchooner.cpp" />
 		<Unit filename="src/Galleon.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/IController.cpp" />

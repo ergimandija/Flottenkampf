@@ -23,7 +23,7 @@ void Schooner::attack(std::unique_ptr<IShip>& target){
         target->recieveDamage(_damage*2,rolledAmount);
     } else {
         std::cout << "Ship " << _id << " greift Ship " << target->getId() << " an" << std::endl;
-        target->recieveDamage(_damage, rolledAmount);
+        target->recieveDamage(_damage*this->getDistanceFactor(target), rolledAmount);
     }
 
 

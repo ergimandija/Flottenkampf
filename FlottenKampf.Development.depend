@@ -549,14 +549,13 @@
 1779027698 source:c:\users\user\documents\oop\flottenkampf.development\src\game.cpp
 	"Game.h"
 
-1779016599 c:\users\user\documents\oop\flottenkampf.development\include\game.h
+1779194506 c:\users\user\documents\oop\flottenkampf.development\include\game.h
 	<iostream>
 	"World.h"
 	"Team.h"
 	<vector>
 	<memory>
 	"BattleContext.h"
-	"GraphicsManager.h"
 
 1778755292 source:c:\users\user\documents\oop\flottenkampf.development\src\iship.cpp
 	"IShip.h"
@@ -584,12 +583,14 @@
 	"Team.h"
 	<SFML/Graphics.hpp>
 
-1779030903 source:c:\users\user\documents\oop\flottenkampf.development\src\ship.cpp
+1779195525 source:c:\users\user\documents\oop\flottenkampf.development\src\ship.cpp
 	"Ship.h"
+	<cmath>
 
-1779029761 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
+1779195334 c:\users\user\documents\oop\flottenkampf.development\include\ship.h
 	"IShip.h"
 	"Dice.h"
+	<cmath>
 
 1778854728 source:c:\users\user\documents\oop\flottenkampf.development\src\battlecontext.cpp
 	"BattleContext.h"
@@ -598,19 +599,19 @@
 	"Team.h"
 	<memory>
 
-1779026453 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
+1779195407 source:c:\users\user\documents\oop\flottenkampf.development\src\brig.cpp
 	"Brig.h"
 
 1778791369 c:\users\user\documents\oop\flottenkampf.development\include\brig.h
 	"Ship.h"
 
-1779026447 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
+1779195435 source:c:\users\user\documents\oop\flottenkampf.development\src\galleon.cpp
 	"Galleon.h"
 
 1778791108 c:\users\user\documents\oop\flottenkampf.development\include\galleon.h
 	"Ship.h"
 
-1779026458 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
+1779195425 source:c:\users\user\documents\oop\flottenkampf.development\src\schooner.cpp
 	"Schooner.h"
 
 1779013902 c:\users\user\documents\oop\flottenkampf.development\include\schooner.h
@@ -627,7 +628,7 @@
 	"PlayerController.h"
 	"AIController.h"
 
-1778952014 source:c:\users\user\documents\oop\flottenkampf.development\src\shipfactory.cpp
+1779195544 source:c:\users\user\documents\oop\flottenkampf.development\src\shipfactory.cpp
 	"ShipFactory.h"
 
 1778861028 c:\users\user\documents\oop\flottenkampf.development\include\icontroller.h

@@ -54,14 +54,14 @@ void Ship::move(){
 }
 
 void Ship::moveRight(){
-    if(_x<_xBorder-2){
-    _x+=1;
+    if(_x<_xBorder-3){
+    _x+=2;
 
     }
 }
 void Ship::moveLeft(){
     if(_x>0){
-    _x-=1;
+    _x-=2;
     }
 }
 void Ship::moveUp(){
@@ -118,6 +118,25 @@ bool Ship::recieveDamage(int amount, int rolledAmount){
 
 bool Ship::isAlive(){
     return _isAlive;
+}
+
+#include <cmath>
+
+float Ship::getDistanceFactor(std::unique_ptr<IShip>& target) {
+    int dx = this->getXPosition() - target->getXPosition();
+    int dy = this->getYPosition()  - target->getYPosition();
+
+    float distance = std::sqrt(dx * dx + dy * dy);
+
+    if (distance > 10.0f) {
+        return 0.5f;
+    }
+    else if (distance == 10.0f) {
+        return 1.0f;
+    }
+    else {
+        return 2.0f;
+    }
 }
 
  void Ship::setController(std::unique_ptr<IController>& controller){
